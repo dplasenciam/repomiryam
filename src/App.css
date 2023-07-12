@@ -1,0 +1,52 @@
+body {
+  background: rgba(245, 222, 179);
+  font-size: 1.5rem;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: auto;
+  animation: loading 0.5s linear;
+}
+
+@keyframes loading {
+  from {
+    scale: 0;
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    scale: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+.menu {
+  display: flex;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.tab:hover {
+  background-color: rgb(247, 199, 111);
+  /* // rgb(237, 198, 125); */
+}
+
+.tab {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.canvas {
+  display: flex;
+  justify-content: center;
+}
